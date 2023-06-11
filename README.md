@@ -1,8 +1,8 @@
 # PostAndComments
 Bu Android uygulaması, jsonplaceholder.com fake api'den alınan verilerle oluşturuldu. Kişiler listelendi ve o kişinin gönderdiği postlar gösterildi. Ayrıca o psta yapılan yorumlar listelendi ve yorumlar için detay sayfası hazırlandı:
  ### Uygulamada Kullanılan Özellikler:
-  <br>Name | Version|</br>
-   Kotlin | 1.8.10| 
+  <br>Name | Version |</br>
+   Kotlin | 1.8.10 | 
   <br> Retrofit  | 2.9.0 |</br></p> 
 # Project Display Image <p> 
   <a href="https://github.com/oykuyildirim/PostAndComments/assets/37236494/68c30740-9bc6-41a7-8ee6-1f0632371e5d" >
