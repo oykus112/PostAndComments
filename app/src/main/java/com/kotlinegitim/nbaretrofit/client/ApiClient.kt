@@ -1,4 +1,4 @@
-package com.kotlinegitim.nbaretrofit
+package com.kotlinegitim.nbaretrofit.client
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

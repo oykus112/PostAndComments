@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundnorm"
     tools:context=".CommentsActivity">
 
-    <TextView
-        android:id="@+id/title_detail"
-        android:layout_width="319dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="44dp"
-        android:background="@color/blue"
-        android:textSize="20sp"
+    <ListView
+        android:id="@+id/comments"
+        android:layout_width="366dp"
+        android:layout_height="253dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/pink"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/comments_title" />
 
     <TextView
         android:id="@+id/body_post"
@@ -28,19 +29,37 @@
         android:layout_marginEnd="44dp"
         android:background="@color/yellow"
 
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_detail" />
 
-    <ListView
-        android:id="@+id/comments"
-        android:layout_width="322dp"
-        android:layout_height="287dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="40dp"
-        android:background="@color/purple_200"
+    <TextView
+        android:id="@+id/title_detail"
+        android:layout_width="319dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:background="@color/blue"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/comments_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="180dp"
+        android:text="COMMENTS"
+        android:textColor="@color/green"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/body_post" />

@@ -31,7 +31,7 @@ class UserListviewAdaptor(private val context: Activity, private val resource: I
 
 
         name.text = users.name
-        username.text = users.username
+        username.text ="NickName : "+ users.username
 
 
         root.setOnClickListener(object : View.OnClickListener {

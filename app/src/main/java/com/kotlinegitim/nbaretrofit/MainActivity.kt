@@ -3,7 +3,9 @@ package com.kotlinegitim.nbaretrofit
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
+import com.kotlinegitim.nbaretrofit.client.ApiClient
 import com.kotlinegitim.nbaretrofit.customadaptors.UserListviewAdaptor
+import com.kotlinegitim.nbaretrofit.service.JsonPlacecHolderService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -13,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     var post = mutableListOf<Post>()
     var Users = mutableListOf<Users>()
-    lateinit var nbaService : JsonPlacecHolderService
+    lateinit var Service : JsonPlacecHolderService
     lateinit var userListview : ListView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,12 +24,12 @@ class MainActivity : AppCompatActivity() {
 
 
         userListview = findViewById(R.id.users)
-        nbaService = ApiClient.getClient().create(JsonPlacecHolderService::class.java)
+        Service = ApiClient.getClient().create(JsonPlacecHolderService::class.java)
 
         val adaptor = UserListviewAdaptor(this,R.layout.users_custom_layout,Users)
 
 
-        nbaService.allUsers().enqueue(object : Callback<List<Users>>{
+        Service.allUsers().enqueue(object : Callback<List<Users>>{
             override fun onResponse(call: Call<List<Users>>, response: Response<List<Users>>) {
 
                 val users = response.body()

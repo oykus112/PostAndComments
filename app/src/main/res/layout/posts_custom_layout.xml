@@ -21,12 +21,14 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:singleLine="true"
+            android:textColor="@color/green2"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

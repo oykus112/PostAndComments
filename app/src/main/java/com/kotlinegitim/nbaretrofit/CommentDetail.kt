@@ -23,10 +23,10 @@ class CommentDetail : AppCompatActivity() {
         Email = findViewById(R.id.email)
         CommentName = findViewById(R.id.commentname)
 
-        comment_bodys.text = body_comment
+        comment_bodys.text = "BODY : "+body_comment
         comment_bodys.movementMethod = ScrollingMovementMethod()
 
         Email.text = email
-        CommentName.text = commentname
+        CommentName.text = "TITLE : "+commentname
     }
 }

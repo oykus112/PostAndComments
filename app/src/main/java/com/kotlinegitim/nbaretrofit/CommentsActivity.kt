@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.widget.ListView
 import android.widget.TextView
+import com.kotlinegitim.nbaretrofit.client.ApiClient
 import com.kotlinegitim.nbaretrofit.customadaptors.CommentCustomAdaptor
+import com.kotlinegitim.nbaretrofit.service.JsonPlacecHolderService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -65,10 +67,10 @@ class CommentsActivity : AppCompatActivity() {
         })
 
 
-        title.text = title_detail
+        title.text = "TITLE : "+title_detail
         title.movementMethod = ScrollingMovementMethod()
 
-        body.text = postbody
+        body.text = "POST BODY : "+postbody
         body.movementMethod = ScrollingMovementMethod()
 
 

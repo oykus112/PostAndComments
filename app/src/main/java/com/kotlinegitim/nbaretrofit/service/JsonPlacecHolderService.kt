@@ -1,5 +1,8 @@
-package com.kotlinegitim.nbaretrofit
+package com.kotlinegitim.nbaretrofit.service
 
+import com.kotlinegitim.nbaretrofit.Comments
+import com.kotlinegitim.nbaretrofit.Post
+import com.kotlinegitim.nbaretrofit.Users
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -18,12 +21,6 @@ interface JsonPlacecHolderService {
 
     @GET("posts/{limit}/comments")
     fun getComment(@Path("limit") limit: Long): Call<List<Comments>>
-   /* @GET("products/search")
-    fun allPost(@Query("q") name : String ): Call<List<Product>>*/
-
-
-
-
 
 
 
